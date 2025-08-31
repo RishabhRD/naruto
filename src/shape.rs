@@ -18,6 +18,6 @@ impl Shape for Circle {
         let x = point.x - self.centre.x;
         let y = point.y - self.centre.y;
 
-        float_equals(x * x + y * y, self.radius * self.radius)
+        x * x + y * y <= self.radius * self.radius
     }
 }
